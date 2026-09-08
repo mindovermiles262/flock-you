@@ -325,7 +325,6 @@ pio device monitor
 | `LED_PIN` | 21 | Onboard user LED |
 | `BUZZER_PIN` | 3 | Piezo |
 | `DEBUG_ALLOW_RANDOMIZED_MAC` | 0 | See `matchOuiRaw()`
-| `DEBUG_LOCAL_OUI` | `00:00:00` | Set to your WiFi MAC for testing
 
 ---
 
