@@ -43,10 +43,8 @@
 #define MIRROR_TX_PIN 43
 #endif
 
-// Use for testing purposes. Set DEBUG_LOCAL_OUI to your own device's OUI to
-// see what happens when your device finds a matching OUI.
+// Use for testing purposes. Add your OUI to the target_oui array below
 #define DEBUG_ALLOW_RANDOMIZED_MAC 0
-#define DEBUG_LOCAL_OUI "00:00:00" // iwconfig <DEVICE>
 
 #ifndef USE_M5_SPEAKER
 #define USE_M5_SPEAKER 0
@@ -194,9 +192,8 @@ static const char *target_ouis[] = {
     "48:27:ea",
     "a4:cf:12",
     "14:b5:cd",
-    "82:6b:f2", // contributed by DeFlockJoplin
-    DEBUG_LOCAL_OUI,
-};
+    "82:6b:f2" // contributed by DeFlockJoplin
+}; 
 static const size_t OUI_COUNT = sizeof(target_ouis) / sizeof(target_ouis[0]);
 
 // Pre-compiled byte table — populated once in setup(), never touched again.
